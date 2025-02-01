@@ -26,7 +26,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- DaisyUI -->
 
-    <style>
+    <style type="text/tailwindcss">
 
         :root {
             --primary-color: #FFDC26;
@@ -39,6 +39,10 @@
         font-family: "Poppins", serif;
         font-style: normal;
         }
+
+      .small_pet_card {
+        @apply flex items-center border border-slate-100 rounded-lg bg-white justify-start p-2 sm:p-3 gap-2 sm:gap-5 shadow-lg hover:shadow-xl text-sm sm:text-base 
+      } 
 
     </style>
     
@@ -105,7 +109,7 @@
                   </ul>
                 </div>
 
-                <div class="hidden sm:flex gap-4">
+                <div class="hidden sm:flex gap-2 sm:p-4 w-[40%]">
                   <i class="fa-regular fa-bell"></i>  
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <a class="btn bg-[var(--primary-color)]">Register</a>
@@ -117,9 +121,9 @@
     </header>
    <!-- Header section -->
    <!-- Main -->
-   <main class="px-5 lg:px-0 max-w-6xl mx-auto">
+   <main class="">
    <!-- Hero Section -->
-   <section class="h-[80vh] hero sm:bg-[url('assets/cat-big.png')] bg-right bg-cover bg-no-repeat ">
+   <section class="h-[80vh] hero sm:bg-[url('assets/cat-big.png')] bg-right bg-cover bg-no-repeat max-w-6xl mx-auto px-5 lg:px-0">
 
     <div class="grid grid-cols-1 sm:grid-cols-2 justify-between">
 
@@ -138,7 +142,7 @@
    <!-- Hero Section -->
 
    <!-- Categories Section -->
-    <section class="category py-20 space-y-10">
+    <section class="category py-20 space-y-10 max-w-6xl mx-auto px-5 lg:px-0">
       <h2 class="text-xl sm:text-3xl adlam-regular">Browse By Categories</h2>
       <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
         
@@ -196,7 +200,157 @@
     </section>
    <!-- Categories Section -->
 
+   <!-- Products Section -->
+    <section class="bg-[#FFF9F4]">
+     <div class="py-20 space-y-10 max-w-6xl mx-auto px-5 lg:px-0">
 
+     <h2 class="text-xl sm:text-3xl adlam-regular">Trending Pet Products</h2>
+     
+     <div class="grid grid-cols-2 grid-rows-7 sm:grid-cols-5 sm:grid-rows-3 gap-3">
+
+      <div class="bg-[url('assets/cute-pet-small.png')] bg-[#F9DF8A] bg-right-bottom  bg-no-repeat bg-[length:150px_200px] sm:bg-[length:200px_300px] rounded-lg col-span-2 row-span-2 sm:row-span-3 py-5 px-5 sm:px-10  ">
+        <div class="space-y-3 sm:w-3/4 sm:mt-5">
+          <h3 class="adlam-regular text-lg sm:text-2xl">T- Shirt For Dogs</h3>
+        <p>Discover a world of treats, toys, and essentials handpicked for </p>
+        <button class="btn bg-white">Shop Now</button>
+        </div>
+      </div>
+
+    
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg ">
+          <img src="assets/pet-couch.png" alt="">
+        </div>
+        <div class="">
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/bird-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/fish-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/mouse-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/cat-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/dog-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/bird-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="small_pet_card">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/rabbit-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+      <div class="hidden sm:flex items-center border border-slate-100 rounded-lg bg-white justify-start p-2 sm:p-3 gap-2 sm:gap-5 shadow-lg hover:shadow-xl text-sm sm:text-base ">
+        <div class="bg-[#fff3e9] p-2 sm:p-4 w-[40%] rounded-lg">
+          <img src="assets/fish-cartoon.png" alt="">
+        </div>
+        <div>
+            <div class="rating flex items-center gap-2">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-300" /> <span>4.5</span>
+            </div>
+            <h4>Pet Bed</h4>
+            <p>$39.99</p>
+          
+        </div>
+      </div>
+
+     </div>
+
+
+
+     </div>
+    </section>
+   <!-- Products Section -->
     
    </main>
    <!-- Main -->
