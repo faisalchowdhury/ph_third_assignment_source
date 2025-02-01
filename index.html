@@ -18,13 +18,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
 
+     <!-- DaisyUI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <!-- DaisyUI -->
+
     <!-- Tailwind Css Version v3.4.17 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind Css Version v3.4.17 -->
 
-    <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- DaisyUI -->
+   
 
     <style type="text/tailwindcss">
 
@@ -43,6 +45,27 @@
       .small_pet_card {
         @apply flex items-center border border-slate-100 rounded-lg bg-white justify-start p-2 sm:p-3 gap-2 sm:gap-5 shadow-lg hover:shadow-xl text-sm sm:text-base 
       } 
+      .ani {
+        animation: slide 1s ease-in-out infinite ;
+      }
+
+      @keyframes slide {
+
+        0% {
+          transform: translate(0px);
+        }
+        25% {
+          transform: translate(100px);
+        }
+        50% {
+          transform: rotate(45deg);
+        }
+        100% {
+          transform: translate(0px);
+        }
+
+        
+      }
 
     </style>
     
@@ -130,7 +153,7 @@
       <div class="space-y-5">
         <h2 class="text-3xl sm:text-5xl adlam-regular">Pamper Your Pet, Because They Deserve the Bes</h2>
         <p class="font-light">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-        <button class="bg-[var(--primary-color)] btn">Find a pet</button>
+        <button class="bg-[var(--primary-color)] btn ani">Find a pet</button>
       </div>
 
       <div class="sm:invisible">
@@ -199,6 +222,28 @@
       </div>
     </section>
    <!-- Categories Section -->
+
+
+   <!-- Countdown Section -->
+    <section class="category py-20 space-y-10 max-w-6xl mx-auto px-5 lg:px-0">
+
+      <div class="flex flex-col sm:flex-row items-center gap-5 ">
+         <div>
+          <img class="w-3/5 mx-auto" src="assets/food.webp" alt="">
+         </div>
+
+         <div class="space-y-4 text-center sm:text-left">
+          <h2 class="text-5xl adlam-regular text-[var(--primary-color)]">70% Off</h2>
+          <h3 class="text-3xl adlam-regular">Get Discount on you first purchase</h3>
+          <p class="text-xl">( On all types of cat food )</p>
+          <button class="btn bg-[var(--primary-color)]">Order Now</button>
+
+         </div>
+
+      </div>
+
+    </section>
+   <!-- Countdown Section -->
 
    <!-- Products Section -->
     <section class="bg-[#FFF9F4]">
